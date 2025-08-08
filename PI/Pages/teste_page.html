@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto Personalizado</title>
+    <link rel="stylesheet" href="../src/Css/style.css">
+
+    <!-- ########## -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- ########## -->
+
+    <script src="../src/JS/filtro-mobile.js" defer></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+
+<body>
+  <script>
+    document.getElementById('btn_filtro_toggle').addEventListener('click', () => {
+    document.getElementById('open_filtro').classList.add('active');
+});
+
+document.getElementById('btn_filtro_close').addEventListener('click', () => {
+    document.getElementById('open_filtro').classList.remove('active');
+});
+
+  </script>
+  <style>
+    .top_mobile_filtro_open {
+    position: fixed;
+    top: 0;
+    left: 100%; /* Inicialmente fora da tela */
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateX(0);
+    opacity: 0; /* Invisível */
+}
+
+.top_mobile_filtro_open.active {
+    transform: translateX(-100%);
+    opacity: 1; /* Visível */
+}
+
+.container_btn_fechar_filtro {
+    text-align: right;
+    padding: 10px;
+}
+
+.container_btn_fechar_filtro i {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.item_mobile_filtro {
+    padding: 15px;
+}
+
+.container_btn_aplicar_filtro_mobile button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container_btn_aplicar_filtro_mobile button:hover {
+    background-color: #0056b3;
+}
+
+  </style>
+    <header class="menu">
+        <nav class="container-menu">
+                <div class="img-menu">
+                    <a href="../Pages/Home.html">
+                        <img src="../Src/imagens/Apola__1_-removebg-preview.png" alt=""class="img-logo" >
+                    </a>
+                </div>
+                <div class="barra-pesquisa">
+                    <div class="container-barra">
+                        <input class="input-pesquisa" type="text" placeholder="Pesquise seu produto...">
+                        <a href="#" class="btn-pesquisa">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                </div>
+        <!-- INICIO MENU MOBILE -->
+                <div class="btn-abrir-menu" id="btn-menu-abrir">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="mobile-btn" id="mobile-btn">
+                    <div class="btn-fechar" id="btn-fechar">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="content-mobile-top">
+                        <div class="img-content-mobile">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="text-content-mobile"><span>Faça seu login ou cadastra-se</span></div>
+                    </div>
+                    <div class="content-mobile-btn-login-cad">
+                        <button class="btn-login-mobile">
+                            <a href="login.php">Login</a>
+
+                        </button>
+                        <button class="btn-cadastro-mobile">
+                            <a href="cadastro.php">Cadastro</a>
+                        </button>
+                    </div>
+                    <div class="barra-pesquisa-mobile">
+                        <div class="content-mobile-pesquisa">
+                            <input type="text"><button class="btn-pesquisa-mobile"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="content-conteudo-mobile">
+                        <h5>Destaque</h5>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-fire"></i>
+                                <a href="">Mais Vendidos</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <a href="">Ofertas</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-box"></i>
+                                <a href="">Produto Personalizado</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-people-group"></i>
+                                <a href="../Pages/SobreNos.html">Sobre Nós</a>
+                            </li>
+                        </ul>
+                        <h5>Categorias</h5>
+                        <ul>
+                            <li class="categoria-content-mobile-items">
+                                <a href="#">Amigurumi</a>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <div class="submenu-drop-mobile">
+                                <ul class="dropdown__menu">
+                                    <div class="btn-voltar-submenu">
+                                        <i class="fa-solid fa-chevron-left"></i><p class="text-submenu-voltar">voltar</p>
+                                    </div>
+                                    <li><a class="drop__link" href="#">Amigurumi Cacto</a></li>
+                                    <li><a class="drop__link" href="#">Amigurumi Urso</a></li>
+                                </ul>
+                            </div>
+                        
+                            <li class="categoria-content-mobile-items">
+                                <a href="#">Cachepô</a>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <div class="submenu-drop-mobile">
+                                <ul class="dropdown__menu">
+                                    <div class="btn-voltar-submenu">
+                                        <i class="fa-solid fa-chevron-left"></i><p class="text-submenu-voltar">voltar</p>
+                                    </div>
+                                    <li><a class="drop__link" href="#">Cachepô Bolsa</a></li>
+                                    <li><a class="drop__link" href="#">Cachepô Tapete</a></li>
+                                </ul>
+                            </div>
+                        
+                            <li class="categoria-content-mobile-items">
+                                <a href="#">Porta-Chaves</a>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <div class="submenu-drop-mobile">
+                                <ul class="dropdown__menu">
+                                    <div class="btn-voltar-submenu">
+                                        <i class="fa-solid fa-chevron-left"></i><p class="text-submenu-voltar">voltar</p>
+                                    </div>
+                                    <li><a class="drop__link" href="#">Porta-Chaves de raposa</a></li>
+                                    <li><a class="drop__link" href="#">Porta-Chaves de raposa</a></li>
+                                </ul>
+                            </div>
+                            <li class="categoria-content-mobile-items">
+                                <a href="#">Bordado</a>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <div class="submenu-drop-mobile">
+                                <ul class="dropdown__menu">
+                                    <div class="btn-voltar-submenu">
+                                        <i class="fa-solid fa-chevron-left"></i><p class="text-submenu-voltar">voltar</p>
+                                    </div>
+                                    <li><a class="drop__link" href="#">Bordado paisagem</a></li>
+                                    <li><a class="drop__link" href="#">Bordado paisagem</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="overlay-mobile" id="overlay-mobile"></div>
+        <!-- FIM MENU MOBILE -->
+                <div class="lista-item">
+                    <nav class="itens-menu">
+                        <ul class="menu-main">
+                            <li class="icon-default-back">
+                                <a id="icon-default" href="../Pages/SobreNos.html">Sobre Nós</a>
+                            </li>
+                            <li class="icon-default-back">
+                                <a id="icon-default" href="">Personalize</a>
+                            </li>
+                            <li id="text-categoria">
+                                <a href="">Categorias<i class="fa-solid fa-chevron-down icon-seta"></i></a>
+                                <div class="mega-menu">
+                                    <div class="mega-menu-content">
+                                        <div class="row">
+                                            <h3 class="Title-cat"><a href="">Amigurumi</a></h3>
+                                            <ul class="mega-links">
+                                                <li><a href="">Amigurumi Cacto</a></li>
+                                                <li><a href="">Amigurumi Cacto</a></li>
+                                                <li><a href="">Amigurumi Cacto</a></li>
+                                                <li><a href="">Amigurumi Cacto</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <h3 class="Title-cat"><a href="">Cachepô</a></h3>
+                                            <ul class="mega-links">
+                                                <li><a href="">Cachepô Cacto</a></li>
+                                                <li><a href="">Cachepô Cacto</a></li>
+                                                <li><a href="">Cachepô Cacto</a></li>
+                                                <li><a href="">Cachepô Cacto</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <h3 class="Title-cat"><a href="">Porta-Chaves</a></h3>
+                                            <ul class="mega-links">
+                                                <li><a href="">Porta-Chaves Cacto</a></li>
+                                                <li><a href="">Porta-Chaves Cacto</a></li>
+                                                <li><a href="">Porta-Chaves Cacto</a></li>
+                                                <li><a href="">Porta-Chaves Cacto</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <h3 class="Title-cat"><a href="">Bordado</a></h3>
+                                            <ul class="mega-links">
+                                                <li><a href="">Bordado Cacto</a></li>
+                                                <li><a href="">Bordado Cacto</a></li>
+                                                <li><a href="">Bordado Cacto</a></li>
+                                                <li><a href="">Bordado Cacto</a></li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="icon-default-back">
+                                <a id="icon-default" href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                            </li>
+                            <li class="icon-default-back">
+                                <a id="icon-default" href=""><i class="fa-solid fa-user"></i></a>
+                                <ul class="drop-menu">
+                                    <div class="shape-perfil"></div>
+                                    <li><a href="../Pages/login.php">Login</a></li>
+                                    <li><a href="../Pages/cadastro.php">Cadastro</a></li>
+                                </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+        </nav>
+        <!-- FIM MENU NAVBAR -->
+    </header>
+    <main>
+        <div class="container_categorias">
+          <aside class="top_categoria_mobile">
+            <div class="shape_categoria_top"></div>
+            <div class="container_text_top_categoria">
+                <div class="item_text_top_cat">2016 produtos encontrados.</div>
+                <i class="fa-solid fa-filter" id="btn_filtro_toggle"></i>
+                <div id="btn_filtro" class="item_text_top_cat">Filtrar</div>
+            </div>
+            <div class="shape_categoria_top"></div>
+        </aside>
+        
+        <div class="top_mobile_filtro_open" id="open_filtro">
+            <div class="container_btn_fechar_filtro">
+                <i class="fa-solid fa-xmark" id="btn_filtro_close"></i>
+            </div>
+            <div class="item_mobile_filtro">
+                <div class="title_filtro_cat_mobile">Material</div>
+                <div class="flex_filtro_cat_mobile">
+                    <input type="checkbox" id="material1">
+                    <label for="material1" class="name_filtro_cat_mobile">Cachepô Crochê</label>
+                </div>
+                <!-- Repetir opções -->
+            </div>
+            <div class="item_mobile_filtro">
+                <div class="title_filtro_cat_mobile">Avaliação</div>
+                <div class="flex_filtro_cat_mobile">
+                    <input type="checkbox" id="rating1">
+                    <label for="rating1" class="star_filtro_cat">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </label>
+                </div>
+                <!-- Repetir opções -->
+            </div>
+            <div class="item_mobile_filtro">
+                <div class="title_filtro_cat_mobile">Tamanho</div>
+                <div class="flex_filtro_cat_mobile">
+                    <input type="checkbox" id="size1">
+                    <label for="size1" class="name_filtro_cat_mobile">10 cm</label>
+                </div>
+                <!-- Repetir opções -->
+            </div>
+            <div class="item_mobile_filtro">
+                <div class="title_filtro_cat_mobile">Faixa de Preço</div>
+                <div class="range_filtro_cat_mobile">
+                    <input type="range" id="preco" name="preco" min="0" max="1000" step="10" 
+                           oninput="document.getElementById('rangeValue').innerText = this.value">
+                    <div class="range-value">R$ <span id="rangeValue">500</span></div>
+                </div>
+            </div>
+            <div class="container_btn_aplicar_filtro_mobile">
+                <button>Aplicar</button>
+            </div>
+        </div>
+        
+            <aside class="left_categoria">
+                <div class="container_title_left_categoria">
+                    <h6 class="title_left_categoria">Pagina Inicial</h6>
+                    <h6 class="title_left_categoria">></h6>
+                    <h6 class="title_left_categoria">Cachepô</h6>
+                </div>
+                <div class="container_left_filtro">
+                    <div class="item_filtro_cat">
+                        <div class="title_filtro_cat">Material</div>
+                        <div class="flex_filtro_cat">
+                            <input type="checkbox" name="" id="">
+                            <h6 class="name_filtro_cat">Cachepô Crochê</h6>
+                        </div>
+                        <div class="flex_filtro_cat">
+                            <input type="checkbox" name="" id="">
+                            <h6 class="name_filtro_cat">Cachepô Crochê</h6>
+                        </div>
+                        <div class="flex_filtro_cat">
+                            <input type="checkbox" name="" id="">
+                            <h6 class="name_filtro_cat">Cachepô Crochê</h6>
+                        </div>
+                        <div class="flex_filtro_cat">
+                            <input type="checkbox" name="" id="">
+                            <h6 class="name_filtro_cat">Cachepô Crochê</h6>
+                        </div>
+                        <div class="flex_filtro_cat">
+                            <input type="checkbox" name="" id="">
+                            <h6 class="name_filtro_cat">Cachepô Crochê</h6>
+                        </div>
+                        <span class="linha_quebra_categoria"></span>
+                    </div>
+                    <div class="item_filtro_cat">
+                        <div class="title_filtro_cat">Avaliação</div>
+                        <div class="flex_filtro_cat">
+                            <input type="checkbox" name="" id="">
+                            <h6 class="star_filtro_cat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </h6>
+                        </div>
+                        <div class="flex_filtro_cat">
+                            <input type="checkbox" name="" id="">
+                            <h6 class="star_filtro_cat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star a"></i>
+                            </h6>
+                        </div>
+                        <div class="flex_filtro_cat">
+                            <input type="checkbox" name="" id="">
+                            <h6 class="star_filtro_cat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star a"></i>
+                                <i class="fa-solid fa-star a"></i>
+                            </h6>
+                        </div>
+                        <div class="flex_filtro_cat">
+                            <input type="checkbox" name="" id="">
+                            <h6 class="star_filtro_cat">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star a"></i>
+                                <i class="fa-solid fa-star a"></i>
+                                <i class="fa-solid fa-star a"></i>
+                            </h6>
+                        </div>
+                        <span class="linha_quebra_categoria"></span>
+                    </div>
+                    <div class="item_filtro_cat">
+                        <div class="title_filtro_cat">Tamanho</div>
+                        <div class="flex_filtro_cat">
+                            <input type="checkbox" name="" id="">
+                            <h6 class="name_filtro_cat">10 cm</h6>
+                        </div>
+                        <div class="flex_filtro_cat">
+                            <input type="checkbox" name="" id="">
+                            <h6 class="name_filtro_cat">15 cm</h6>
+                        </div>
+                        <div class="flex_filtro_cat">
+                            <input type="checkbox" name="" id="">
+                            <h6 class="name_filtro_cat">20 cm</h6>
+                        </div>
+                        <div class="flex_filtro_cat">
+                            <input type="checkbox" name="" id="">
+                            <h6 class="name_filtro_cat">25 cm</h6>
+                        </div>
+                        <div class="flex_filtro_cat">
+                            <input type="checkbox" name="" id="">
+                            <h6 class="name_filtro_cat">30 cm</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_title_left_categoria">
+                    <h6 class="title_left_categoria  title_left_categoria_mobile">Faixa de Preço</h6>
+                </div>
+                <div class="conatiner_input_preco">
+                    <input type="range" id="preco" name="preco" min="0" max="1000" step="10" oninput="document.getElementById('rangeValue').innerText = this.value">
+                    <div class="range-value">R$ <span id="rangeValue">500</span></div>
+                </div>
+                
+            </aside>
+
+            <aside class="right_categoria">
+                <div class="container_filtro_right">
+                    <select name="" id="">
+                        <option value="">Mais Vendidos</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="wrap__filtro_right">
+                    <div class="card_produto">
+                        <div class="icon_favorite"><i class="fa-solid fa-heart"></i></div>
+                        <div class="img_content_produto">
+                            <img src="../src/imagens/card_produto/IMG1-Produto.png" alt="">
+                        </div>
+                        <div class="conteudo_card">
+                            <div class="nome_card_produto">Amigurmi Raposa</div>
+                            <div class="content_star_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="preco_card_produto">R$ 50,89</div>
+                            <div class="btn_content_card_produto">
+                                <div class="btn_bag_card"><i class="fa-solid fa-bag-shopping"></i></div>
+                                <div class="btn_buy_card">Comprar</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_produto">
+                        <div class="icon_favorite"><i class="fa-solid fa-heart"></i></div>
+                        <div class="img_content_produto">
+                            <img src="../src/imagens/card_produto/IMG1-Produto.png" alt="">
+                        </div>
+                        <div class="conteudo_card">
+                            <div class="nome_card_produto">Amigurmi Raposa</div>
+                            <div class="content_star_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="preco_card_produto">R$ 50,89</div>
+                            <div class="btn_content_card_produto">
+                                <div class="btn_bag_card"><i class="fa-solid fa-bag-shopping"></i></div>
+                                <div class="btn_buy_card">Comprar</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_produto">
+                        <div class="icon_favorite"><i class="fa-solid fa-heart"></i></div>
+                        <div class="img_content_produto">
+                            <img src="../src/imagens/card_produto/IMG1-Produto.png" alt="">
+                        </div>
+                        <div class="conteudo_card">
+                            <div class="nome_card_produto">Amigurmi Raposa</div>
+                            <div class="content_star_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="preco_card_produto">R$ 50,89</div>
+                            <div class="btn_content_card_produto">
+                                <div class="btn_bag_card"><i class="fa-solid fa-bag-shopping"></i></div>
+                                <div class="btn_buy_card">Comprar</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_produto">
+                        <div class="icon_favorite"><i class="fa-solid fa-heart"></i></div>
+                        <div class="img_content_produto">
+                            <img src="../src/imagens/card_produto/IMG1-Produto.png" alt="">
+                        </div>
+                        <div class="conteudo_card">
+                            <div class="nome_card_produto">Amigurmi Raposa</div>
+                            <div class="content_star_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="preco_card_produto">R$ 50,89</div>
+                            <div class="btn_content_card_produto">
+                                <div class="btn_bag_card"><i class="fa-solid fa-bag-shopping"></i></div>
+                                <div class="btn_buy_card">Comprar</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_produto">
+                        <div class="icon_favorite"><i class="fa-solid fa-heart"></i></div>
+                        <div class="img_content_produto">
+                            <img src="../src/imagens/card_produto/IMG1-Produto.png" alt="">
+                        </div>
+                        <div class="conteudo_card">
+                            <div class="nome_card_produto">Amigurmi Raposa</div>
+                            <div class="content_star_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="preco_card_produto">R$ 50,89</div>
+                            <div class="btn_content_card_produto">
+                                <div class="btn_bag_card"><i class="fa-solid fa-bag-shopping"></i></div>
+                                <div class="btn_buy_card">Comprar</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </aside>
+
+
+
+
+
+        </div>
+
+
+
+        
+    </main>
+
+
+    
+</body>
+</html>

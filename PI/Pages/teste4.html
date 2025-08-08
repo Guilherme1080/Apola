@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal 4</title>
+  <link rel="stylesheet" href="../src/Css/style.css">
+  <script src="../src/JS/modal.js" defer></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <button class="open-modal" data-modal="modal-1">
+
+  </button>
+  <!-- MODAL QUE APOS CLICAR NO ENDEREÇOSCADATARDOS MOSTRA TODOS OS ENDEREÇOS JA CADATRADOS PARA SELECIONAR UM PADRÃO -->
+  <dialog id="modal-1">
+    <div class="modal_header">
+      <button class="close-modal" data-modal="modal-1"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="modal_body">
+      <h5 class="title_modal_zap">Endereços Cadatrados</h5>
+      <div class="text_modal_zap">Selecione o endereço padrão de envio desejado.</div>
+      <form class="container_form_modal_email">
+        <div class="item_endereco_cadastrados_modal">
+            <div class="selection_shape_modal"></div>
+            <h6 class="text_endereco_cadatrados_modal">Avenida dos Eucaliptos, 789, Centro, RJ</h6>
+        </div>
+        <div class="item_endereco_cadastrados_modal">
+            <div class=" selection_shape_modal active"></div>
+            <h6 class="text_endereco_cadatrados_modal">Avenida dos Eucaliptos, 789, Centro, RJ</h6>
+        </div>
+        <div class="container_btn_modal_email">
+          <button class="btn_enviar_modal_email">Salvar</button>
+        </div>
+      </form>  
+    </div>
+  </dialog>
+
+</body>
+</html>

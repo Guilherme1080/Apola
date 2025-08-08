@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-2xl font-bold mb-4">Controle de Estoque - Cores e Tamanhos</h1>
+
+        <div class="bg-white shadow-md rounded p-6 mb-6">
+            <h2 class="text-xl font-semibold mb-4">Adicionar ao Estoque</h2>
+            <form id="estoqueForm" class="space-y-4">
+                <div>
+                    <label class="block mb-1 font-medium">Produto:</label>
+                    <select id="produto" class="w-full border p-2 rounded">
+                        <option value="1">Camiseta Básica</option>
+                        <option value="2">Moletom Estiloso</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block mb-1 font-medium">Cor:</label>
+                    <select id="cor" class="w-full border p-2 rounded">
+                        <option value="1">Preto</option>
+                        <option value="2">Branco</option>
+                        <option value="3">Vermelho</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block mb-1 font-medium">Tamanho:</label>
+                    <select id="tamanho" class="w-full border p-2 rounded">
+                        <option value="1">P</option>
+                        <option value="2">M</option>
+                        <option value="3">G</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block mb-1 font-medium">Quantidade:</label>
+                    <input type="number" id="quantidade" class="w-full border p-2 rounded" min="0" placeholder="Quantidade">
+                </div>
+
+                <button type="button" onclick="adicionarEstoque()" class="bg-blue-500 text-white p-2 rounded">Adicionar Estoque</button>
+            </form>
+        </div>
+
+        <div class="bg-white shadow-md rounded p-6">
+            <h2 class="text-xl font-semibold mb-4">Consultar Estoque</h2>
+            <button onclick="consultarEstoque()" class="bg-green-500 text-white p-2 rounded">Atualizar Estoque</button>
+            <ul id="estoqueLista" class="mt-4 space-y-2"></ul>
+        </div>
+    </div>
+
+    <script>
+        async function adicionarEstoque() {
+            const produtoId = document.getElementById('produto').value;
+            const corId = document.getElementById('cor').value;
+            const tamanhoId = document.getElementById('tamanho').value;
+            const quantidade = document.getElementById('quantidade').value;
+
+            // Envia os dados para o backend (ajuste a URL para o seu servidor PHP)
+            await axios.post('/adicionarEstoque.php', {
+                produtoId,
+                corId,
+                tamanhoId,
+                quantidade
+            });
+
+            alert('Estoque adicionado com sucesso!');
+            consultarEstoque();
+        }
+
+        async function consultarEstoque() {
+            const resposta = await axios.get('/consultarEstoque.php');
+            const lista = document.getElementById('estoqueLista');
+            lista.innerHTML = '';
+
+            resposta.data.forEach(item => {
+                lista.innerHTML += `<li class="p-2 bg-gray-100 rounded">
+                    Produto: ${item.produto} - Cor: ${item.cor} - Tamanho: ${item.tamanho} - Estoque: ${item.quantidade}
+                </li>`;
+            });
+        }
+
+        // Carregar o estoque na inicialização
+        consultarEstoque();
+    </script>
+</body>
+</html>

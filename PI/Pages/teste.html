@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <link rel="stylesheet" href="../src/Css/style.css">
+  <script src="../src/JS/modal.js" defer></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <button class="open-modal" data-modal="modal-1">
+
+  </button>
+  <!-- MODAL QUE APÓS FINALIZAR O PEDIDO REDIRECIONA PARA O WHATSAP -->
+  <dialog id="modal-1">
+    <div class="modal_header">
+      <button class="close-modal" data-modal="modal-1"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="modal_body">
+      <h5 class="title_modal_zap">Pedido Realizado!</h5>
+      <div class="text_modal_zap">Segue o link do nosso WhatsApp para realizar o pagamento. Entraremos em contato em breve.</div>
+      <div class="conatiner_item_modal_link_zap">
+        <div class="item_modal_link_zap">
+          <i class="fa-brands fa-whatsapp"></i>
+          <a href="#">67 991924837</a>
+        </div>
+      </div>  
+    </div>
+  </dialog>
+
+
+</body>
+</html>

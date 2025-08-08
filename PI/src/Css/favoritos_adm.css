@@ -1,0 +1,227 @@
+
+
+
+.container_favortos{
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+.left-container_favoritos{
+  height: 100vh; /* Termina antes do final do container pai */
+  justify-content: center;
+  display: flex;
+  /* border-right: 1px solid #d1d1d1; */
+  width: 25%;
+}
+
+
+.container_favoritos_left{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 5rem;
+    align-items: center;
+    height: 100%;
+
+
+}
+
+.title_left_favoritos{
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    color: #4A4A4A;
+    padding-bottom: 1rem;
+}
+
+
+.container_favoritos_left ul{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 2rem;
+}
+
+.item_favorito_left{
+    flex-direction: row;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+.item_favorito_left .link_favorito_left{
+    display: flex;
+    color: #4A4A4A;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.item_favorito_left:hover{
+    transform: translateX(10px);
+    background-color: #dddddd;
+    color: white;
+}
+
+.item_favorito_left i{
+    color: #4A4A4A;
+}
+
+  
+
+.checkbox-heart input {
+    display: none;
+} 
+  
+.checkbox-heart  .i {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.checkbox-heart .i:before, .checkbox-heart .i:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    position: absolute;
+    top: -10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+  
+  
+.checkbox-heart input:checked + i {
+    color: red; /* Cor do coração quando marcado */
+}
+  
+
+
+.icon_favorite{
+    display: flex;
+    width: 100% ;
+    justify-content: end;
+    
+} 
+
+.icon_favorite i{
+    font-size: 24px;
+    color: rgb(168, 168, 168); 
+    cursor: pointer;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+  
+    
+}  
+
+.right_container_favoritos{
+    display: flex;
+    width: 75%;
+    height: 100%;
+    justify-content: center;
+}
+
+
+.container_favoritos_right{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.banner_container_favoritos{
+    display: flex;
+    width: 100%;
+    height: 40%;
+
+}
+
+
+.banner_container_favoritos img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.item_conteudo_favoritos{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 110px;
+    justify-content: center;
+}
+
+
+  
+
+.checkbox-heart input {
+    display: none;
+} 
+  
+.checkbox-heart  .i {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.checkbox-heart .i:before, .checkbox-heart .i:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    position: absolute;
+    top: -10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+  
+  
+.checkbox-heart input:checked + i {
+    color: red; /* Cor do coração quando marcado */
+}
+  
+
+
+@media (max-width: 1020px) {
+    .left-container_favoritos{
+        display: none;
+    }
+    .right_container_favoritos{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item_conteudo_favoritos{
+        display: flex;
+        justify-content: center;
+    }
+    
+}

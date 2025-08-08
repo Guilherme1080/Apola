@@ -1,0 +1,2061 @@
+/* .shape_sobre{
+    display: flex;
+    position: absolute;
+    width:400px;
+    height:400px;
+    border-radius: 50%;
+    background-color:#FA301E;
+    z-index:0;
+    bottom: -40rem;
+    left: 10rem;
+} */
+
+
+/* AREA BANNER SOBRE NÓS */
+
+
+.Banner_Sobre_Nos {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    flex-direction: column;
+}
+
+
+.content_banner_sobre_nos {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+
+.content_banner_sobre_nos img {
+    z-index: 0;
+    display: flex;
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+    transition: all 0.3s ease;
+}
+
+
+.content_coteudo_banner_sobre {
+    display: flex;
+    z-index: 1;
+    width: 95%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    background-color: rgba(24, 24, 24, 0.229);
+    border-radius: 10px 10px 10px 10px;
+    row-gap: 20px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.text_top_sobre {
+    display: flex;
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 500;
+    width: 40%;
+
+}
+
+
+.text_bottom_sobre {
+    display: flex;
+    width: 50%;
+    font-size: 15px;
+    color: #eeeeee;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+
+.btn_sobre {
+    display: flex;
+    width: 50%;
+    border: none;
+    background-color: transparent;
+
+}
+
+
+.btn_sobre a {
+    text-decoration: none;
+    background-color: rgb(60, 60, 60);
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 45px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn_sobre a:hover {
+    background-color: white;
+    color: #4A4A4A;
+}
+
+
+
+
+
+
+
+/* AREA VIDEO SOBRE NÓS */
+
+
+.video_sobre {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.content_video_sobre {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+
+.video_content {
+    width: 60%;
+    height: 70%;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+}
+
+
+.item_conteudo_sobre {
+    position: absolute;
+    display: flex;
+    background-color: #ffffff;
+    width: 30%;
+    height: 40%;
+    right: 2rem;
+    flex-direction: column;
+    border-radius: 50px 5px 5px 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+
+.text_sobre_video {
+    display: flex;
+    text-transform: capitalize;
+    text-align: center;
+    color: #3f3f3f;
+    letter-spacing: 2px;
+    font-size: 13px;
+
+
+}
+
+
+.btn_video_sobre {
+    display: flex;
+    position: absolute;
+    bottom: -1rem;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background-color: #4200db;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+.btn_video_sobre:hover {
+    background-color: #eeeeee;
+    color: #4A4A4A;
+}
+
+
+
+
+
+/* AREA CARDS SERVICE SOBRE NÓS */
+
+.title_section_sobre {
+    display: flex;
+    color: #969696;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_section_sobre2 {
+    display: flex;
+    color: #4A4A4A;
+}
+
+.cards_service {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content_cards_service {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+}
+
+
+.item_cards_service {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.item_cards_service:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    z-index: 3;
+}
+
+
+
+
+.right_item_cards_service {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+
+.right_item_cards_service img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.left_item_cards_service {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    gap: 4rem;
+    position: relative;
+    background-color: white;
+}
+
+
+
+.text_apola_card_service {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    left: 5rem;
+    top: 5.2rem;
+    font-size: 60px;
+    font-weight: 600;
+    color: #f1f1f1;
+    z-index: 1;
+}
+
+
+.text_card_service {
+    width: 100%;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-left: 3rem;
+    font-weight: 500;
+    color: #4A4A4A;
+    z-index: 2;
+}
+
+
+.content_btn_card_service {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding-right: 10rem;
+    flex-direction: row;
+}
+
+.btn_card_service {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #969696;
+    color: white;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    column-gap: 0.5rem;
+    font-weight: 500;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+
+.btn_card_service:hover {
+    background-color: #4A4A4A;
+    cursor: pointer;
+    transform: translateX(10px);
+    padding-left: 1rem;
+    font-size: 15px;
+}
+
+
+
+/* AREA CARDS AVALIAÇÂO SOBRE NÓS */
+
+.comentario-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: orange;  */
+    max-width: 90%;
+    height: auto;
+
+}
+.card_avaliacao_sobre {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+.content_card_avalicao_sobre {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+.swiper_sobre {
+    display: flex;
+    width: 700px;
+    height: auto;
+    border-radius: 5px;
+    padding: 4rem;
+
+}
+
+
+.swiper-wrapper {
+    
+    display: flex;
+}
+
+
+.swiper-pagination-sobre {
+    display: none;
+   
+}
+
+
+
+.swiper_sobre .swiper-wrapper .swiper-slide {
+    display: flex;
+    /* width: 100%;
+    height: 100%; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    max-width: 700px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    flex-direction: column;
+
+}
+
+.content_btn_sobre {
+    display: flex;
+    width: 100%;
+}
+
+.swiper-button-next {
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.content_img_perfil_sobre {
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_img_perfil_sobre img {
+    display: flex;
+    object-fit: cover;
+    background-color: rgb(216, 216, 216);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.content_star_sobre {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 2px;
+}
+
+.content_star_sobre .fa-star {
+    display: flex;
+    font-size: 20px;
+    color: rgb(255, 136, 0);
+}
+
+.text_area_sobre_avaliacao {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_area_sobre_avaliacao .nome_perfil_sobre {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 20px;
+    font-weight: 500;
+    color: #272727;
+}
+
+.text_area_sobre_avaliacao .testemunho_perfil_sobre {
+    display: flex;
+    width: 90%;
+    font-size: 19px;
+    font-weight: 300;
+    color: #4A4A4A;
+    text-align: justify;
+}
+
+
+
+
+.btn_card_sobre {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn_prev_card_avaliacao,
+.btn_next_card_avaliacao {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #4200db;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    z-index: 4;
+}
+
+.btn_prev_card_avaliacao i,
+.btn_next_card_avaliacao i {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+
+.btn_prev_card_avaliacao:hover,
+.btn_next_card_avaliacao:hover {
+    transform: scale(1.09);
+    background-color: #dfdfdf;
+}
+
+
+
+/* AREA CONTEUDO SOBRE NÓS */
+
+
+.about_text {
+    display: flex;
+    width: 100%;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_about_text {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background-color: #4200db; */
+    margin: 0;
+}
+
+.conteudo_text_about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.texto_about {
+    text-align: justify;
+}
+
+
+.right_about_text {
+    display: flex;
+    width: 40%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-color: gainsboro; */
+}
+
+.right_about_text img {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    transform: rotateY(180deg);
+    position: absolute;
+    /* background-color: #cc9933; */
+
+}
+
+
+
+
+
+.left_about_text {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    height: 600px;
+    margin-top: 10px;
+}
+
+
+.title_text_about {
+    display: flex;
+    color: #969696;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    gap: 10px;
+}
+
+.title_text_about2 {
+    display: flex;
+    color: #4A4A4A;
+
+}
+
+
+.conteudo_text_about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4A4A4A;
+    font-weight: 400;
+    width: 90%;
+    font-size: 15px;
+}
+
+
+
+.content_number_dados_sobre {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    padding-top: 1rem;
+}
+
+
+.couteudo_dados_sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.number_dados_sobre {
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
+    color: #FA301E;
+}
+
+
+.text_dados_sobre {
+    display: flex;
+    color: #1f1f1f;
+    font-weight: 500;
+}
+
+.content_btn_about {
+    display: flex;
+    height: 40%;
+    align-items: center;
+}
+
+.btn_about {
+    display: flex;
+    width: 200px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4200db;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn_about:hover {
+    background-color: #1f0068;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+
+/* AREA FINAL SOBRE NÒS*/
+
+
+.confira_sobre {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+}
+
+.content_confira_sobre {
+    display: flex;
+    width: 100%;
+    border-radius: 100px 100px 0px 0px;
+    height: 100%;
+    background-color: rgb(245, 245, 245);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.text_confira_sobre {
+    display: flex;
+    color: #969696;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+
+.content_btn_confira_sobre {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    gap: 1rem;
+}
+
+
+
+.input_confira_sobre {
+    display: flex;
+    width: 500px;
+    height: 35px;
+    outline: none;
+    border: none;
+    padding-left: 1rem;
+    border-radius: 5px;
+    color: #4A4A4A;
+}
+
+
+.btn_confira_sobre {
+    display: flex;
+    width: 100px;
+    height: 35px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #4A4A4A;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+.btn_confira_sobre:hover {
+    background-color: #4a4a4a98;
+
+}
+
+.justificar-texto{
+    width: 80%;
+    /* background-color: #1a1a1a;    */
+    text-align: 
+    center;
+    /* word-wrap: break-word; */
+    overflow-wrap: break-word; 
+    font-size: 15px;
+}
+
+@media (max-width: 1000px){
+    .swiper_sobre{
+        width: 100%;
+    }
+}
+
+/* 
+MEDIA QUERIES SOBRE */
+
+@media (max-width: 660px) {
+    /* AREA BANNER SOBRE NÓS */
+
+
+    .text_top_sobre {
+        display: flex;
+        font-size: 20px;
+        font-weight: 500;
+        width: 100%;
+    }
+
+
+    .text_bottom_sobre {
+        width: 100%;
+        font-size: 10px;
+        ;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+
+    .btn_sobre {
+        width: 80%;
+        background-color: transparent;
+        padding-top: 1rem;
+
+    }
+
+
+    .btn_sobre a {
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+
+
+
+
+    /* AREA VIDEO SOBRE NÓS */
+
+
+    .video_sobre {
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        align-items: center;
+    }
+
+    .video_content {
+        width: 90%;
+        height: 30%;
+        display: flex;
+        border-radius: 5px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    }
+
+
+    .item_conteudo_sobre {
+        background-color: #ffffff;
+        width: 30%;
+        height: 15%;
+        display: none;
+    }
+
+
+    .text_sobre_video {
+        font-size: 5px;
+
+
+    }
+
+
+    .btn_video_sobre {
+        height: 30px;
+        width: 120px;
+        font-size: 11px;
+    }
+
+
+
+
+    /* AREA CARDS AVALIAÇÂO SOBRE NÓS */
+
+
+    .card_avaliacao_sobre {
+        display: flex;
+        width: 100%;
+        height: 60vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .content_card_avalicao_sobre {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .swiper-pagination-sobre {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+
+    .swiper-wrapper {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .swiper_sobre .swiper-wrapper .swiper-slide {
+        display: flex;
+        /* width: 100%;
+        height: 100%; */
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 50%;
+        /* Ou ajuste conforme necessário */
+        max-width: 500px;
+        /* Limita a largura máxima */
+        background-color: rgb(247, 247, 247);
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        flex-direction: column;
+
+    }
+
+
+
+    .content_img_perfil_sobre {
+        display: flex;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content_img_perfil_sobre img {
+        display: flex;
+        object-fit: cover;
+        background-color: rgb(216, 216, 216);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+    .content_star_sobre {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .content_star_sobre .fa-star {
+        font-size: 18px;
+        color: rgb(255, 136, 0);
+    }
+
+    .text_area_sobre_avaliacao {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .text_area_sobre_avaliacao .nome_perfil_sobre {
+        width: 100%;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .text_area_sobre_avaliacao .testemunho_perfil_sobre {
+        width: 90%;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .btn_card_sobre {
+        display: none;
+    }
+
+
+
+
+
+    /* AREA CONTEUDO SOBRE NÓS */
+
+    .about_text {
+        display: flex;
+        width: 100%;
+        height: 60vh;
+    }
+
+    .content_about_text {
+        display: flex;
+        width: 100%;
+        height: 85%;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .right_about_text {
+        width: 40%;
+        display: none;
+    }
+
+    .right_about_text img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .left_about_text {
+        display: flex;
+        /* background-color: #1f0068; */
+        width: 90%;
+        height: auto;
+        /* margin-top: 10rem; */
+        margin-top: 10rem;
+        flex-direction: column;
+
+    }
+
+
+
+    .conteudo_text_about {
+        height: 90%;
+        font-weight: 400;
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .title_text_about {
+        display: flex;
+        color: #969696;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        gap: 5px;
+        padding-bottom: 1rem;
+    }
+
+
+
+
+    .content_number_dados_sobre {
+        width: 90%;
+        gap: 2.4rem;
+        padding-top: 2rem;
+    }
+
+
+    .number_dados_sobre {
+        font-size: 20px;
+        font-weight: 600;
+        color: #FA301E;
+    }
+
+
+    .text_dados_sobre {
+        display: flex;
+        color: #1f1f1f;
+        font-weight: 500;
+        font-size: 7px;
+    }
+
+    .content_btn_about {
+        height: 40%;
+        justify-content: end;
+        padding-top: 2rem;
+
+    }
+
+    .btn_about {
+        width: 130px;
+        height: 35px;
+        background-color: #4200db;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+
+
+
+    /* AREA CARDS SERVICE SOBRE NÓS */
+
+    .title_section_sobre {
+        color: #969696;
+        font-size: 15px;
+        font-weight: 700;
+        padding-top: 2rem;
+        gap: 5px;
+        padding-bottom: 2rem;
+    }
+
+
+
+    .cards_service {
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .content_cards_service {
+        display: flex;
+        width: 90%;
+        height: 80%;
+        flex-direction: column;
+    }
+
+
+    .item_cards_service {
+        display: flex;
+        width: 100%;
+        height: 50%;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .item_cards_service:hover {
+        transform: scale(1.05);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        z-index: 3;
+    }
+
+
+
+
+    .right_item_cards_service {
+        display: flex;
+        width: 50%;
+        height: 100%;
+    }
+
+
+    .right_item_cards_service img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+
+
+    .left_item_cards_service {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        gap: 4rem;
+        position: relative;
+        background-color: white;
+    }
+
+
+
+    .text_apola_card_service {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        left: 2rem;
+        top: 0.5rem;
+        font-size: 35px;
+        font-weight: 600;
+        color: #f1f1f1;
+        z-index: 1;
+    }
+
+
+    .text_card_service {
+        width: 100%;
+        display: flex;
+        text-transform: uppercase;
+        font-size: 13px;
+        padding-left: 3rem;
+        font-weight: 500;
+        color: #4A4A4A;
+        z-index: 2;
+
+    }
+
+
+    .content_btn_card_service {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        align-items: end;
+        padding-right: 1rem;
+
+    }
+
+    .btn_card_service {
+        display: flex;
+        width: 100px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border: none;
+        background-color: #969696;
+        color: white;
+        font-size: 12px;
+        transition: all 0.2s ease;
+        column-gap: 0.5rem;
+        font-weight: 500;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    }
+
+
+    .btn_card_service:hover {
+        background-color: #4A4A4A;
+        cursor: pointer;
+        transform: translateX(10px);
+        padding-left: 1rem;
+        font-size: 15px;
+    }
+
+
+
+
+    /* AREA FINAL SOBRE NÒS*/
+
+    /* === ESTILO GERAL DA SEÇÃO DE COMENTÁRIOS === */
+    .comentarios-container {
+        max-width: 1200px;
+        height: 800px;
+        margin-top: 20rem;
+        padding: 20px;
+        background-color: transparent;
+        /* background-color: #969696; */
+        border-radius: 16px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Título */
+    .comentarios-container h2 {
+        text-align: center;
+        color: #cc9933;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    /* Um comentário individual */
+    .comentario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #fff;
+
+        border-radius: 8px;
+        padding: 20px;
+        /* margin-bottom: 20px; */
+       
+    }
+
+    /* Avatar circular */
+    .avatar {
+        width: 30px;
+        background-color: #FA301E;
+        height: 10px;
+        display: flex;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    /* Nome do usuário */
+    .nome {
+        font-weight: bold;
+        font-size: 18px;
+        color: #444;
+        margin-bottom: 10px;
+    }
+
+    /* Texto do comentário */
+    .comentario-texto {
+        height: auto;
+        width: 100%;
+        /* background-color: #f8a500; */
+        overflow-y: auto;
+        /* Ativa a rolagem se o texto for longo */
+        padding-right: 10px;
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+}
+
+/* ######################################################################################################## */
+ /* < 430px (celulares pequenos)
+ ≥ 576px (celulares grandes e tablets pequenos)
+ ≥ 992px (tablets grandes e desktops pequenos)
+ ≥ 1200px (desktops padrão)
+ ≥ 1400px (desktops grandes e telas maiores)  */
+/* ######################################################################################################## */
+
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 575px){
+    .avatar {
+        width: 80px;
+        height: 80px;
+        /* display: flex; */
+        border-radius: 100%;
+        /* Torna a imagem redondinha */
+        object-fit: cover;
+        border:  1px solid rgb(207, 207, 207);
+        margin-bottom: 10px;
+    }
+    
+    .texto_about{
+        text-align: justify;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .avatar {
+        width: 80px;
+        height: 80px;
+        /* display: flex; */
+        border-radius: 100%;
+        /* Torna a imagem redondinha */
+        object-fit: cover;
+        border:  1px solid rgb(207, 207, 207);
+        margin-bottom: 10px;
+    }
+
+    .texto_about{
+        text-align: justify;
+    }
+
+    .comentario-texto {
+        max-width: 80%;
+    }
+
+}
+
+@media (min-width: 620px) and (max-width: 1190px) {
+    .avatar {
+        width: 80px;
+        height: 80px;
+        /* display: flex;    */
+        border-radius: 100%;
+        /* Torna a imagem redondinha */
+        object-fit: cover;
+        border:  1px solid rgb(207, 207, 207);
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1191px) and (max-width:1199px) {
+    .comentarios-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .comentarios-container h2 {
+        grid-column: 1 / -1;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+        /* display: flex;    */
+        border-radius: 100%;
+        /* Torna a imagem redondinha */
+        object-fit: cover;
+        border:  1px solid rgb(207, 207, 207);
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width:1399px) {
+    .avatar {
+        width: 80px;
+        height: 80px;
+        /* display: flex;    */
+        border-radius: 100%;
+        /* Torna a imagem redondinha */
+        object-fit: cover;
+        border:  1px solid rgb(207, 207, 207);
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .avatar {
+        width: 100px;
+        height: 100px;
+        /* display: flex;    */
+        border-radius: 100%;
+        /* Torna a imagem redondinha */
+        object-fit: cover;
+        border:  1px solid rgb(207, 207, 207);
+
+
+        margin-bottom: 10px;
+    }
+}
+
+/* ####################################################################################### */
+
+/* Tarefa Lourdes: Fazer uma estrutura completa para o cliente deixar sua avaliação sobre a loja - Taslk 45 */
+
+/* Estilo do formulário de avaliação - harmonizado com seção de comentários */
+
+.sessao-avaliacao{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+
+/* Título */
+.avaliacao-titulo {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 60px;
+    font-weight: normal !important; 
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.avaliacao-container {
+    width: 650px; 
+    margin: 20px auto; 
+    background-color: #f6f6f6; 
+    /* background-color: orange; */
+    padding: 10px; 
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    
+    
+  
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+                
+    
+    transition: box-shadow 0.3s ease;
+}
+
+/* Formulário centralizado */
+.avaliacao-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  
+    justify-content: center;
+
+}
+
+/* Linha com os três campos lado a lado */
+.form-row {
+    display: flex;
+    width: 80%;
+    gap: 20px;
+    flex-direction: column;
+ 
+    justify-content: center;
+    align-items: center;
+}
+
+/* Campo Nota menor */
+.form-group.nota {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+
+
+.estrelas-avaliacao {
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+    direction: rtl; /* para selecionar da direita para a esquerda */
+   
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .estrelas-avaliacao input {
+    display: none;
+    
+  }
+  .estrelas-avaliacao input   .fa-star {
+    font-size: rem;
+    display: flex;
+
+    
+  }
+  
+  
+  .estrelas-avaliacao label {
+    color: #ccc;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  .estrelas-avaliacao label i {
+    font-size: 1.3rem;
+  }
+  
+  .estrelas-avaliacao input:checked ~ label,
+  .estrelas-avaliacao label:hover,
+  .estrelas-avaliacao label:hover ~ label {
+    color: rgb(255, 136, 0);
+  }
+
+
+
+/* Campo Mensagem maior */
+.form-group.mensagem {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px;
+    gap: 1rem;
+ 
+    font-size: 20px;
+}
+
+/* Botão ocupa espaço adequado */
+.form-group.botao {
+    flex: 1.2;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Rótulos normais */
+.form-group label {
+
+    font-weight: normal;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+/* Campos */
+#mensagem,
+select {
+    width: 100%;
+    padding: 10px;
+    /* border-radius: 6px;   */
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: vertical;
+    resize: none; /* impede o redimensionamento */
+    overflow: auto;
+    border-radius: 5px;
+}
+
+.botao-enviar {
+    background-color: #4c00ff;
+    color: white;
+    padding: 12px 50px; 
+    font-size: 18px;
+    font-weight: 450px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .botao-enviar:hover {
+    background-color: #FA301E;      
+  }
+
+  /* ####################################################################################### */
+
+
+@media(max-width: 690px){
+    .avaliacao-container{
+        width: 80%;
+        flex-direction: column;
+    }
+    .avaliacao-form{
+        flex-direction: column !important;
+    }
+    .botao-enviar{
+        width: 80%;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .confira_sobre{
+        display: flex;
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .content_confira_sobre{
+        display: flex;
+        width: 100%;
+        border-radius: 100px 100px 0px 0px;
+        height: 90%;
+        background-color: rgb(245, 245, 245);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    
+    .text_confira_sobre{
+        display: flex;
+        color: #969696;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        
+    
+    }
+    
+    
+    .content_btn_confira_sobre{
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4rem;
+        gap: 1rem;
+    }
+    
+    
+    
+    .input_confira_sobre{
+        display: flex;
+        width: 400px;
+        height: 35px;
+        outline: none;
+        border: none;
+        padding-left: 1rem;
+        border-radius: 5px;
+        color: #4A4A4A;
+    }
+    
+    
+    .btn_confira_sobre{
+        display: flex;
+        width: 100px;
+        height: 35px;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-color: #4A4A4A;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    
+    
+    .btn_confira_sobre:hover{
+        background-color: #4a4a4a98;
+    
+    }        
+}
+
+
+@media (max-width:390px) {
+
+    .title_section_sobre2,   .title_section_sobre{
+        font-size: 12px;
+        
+    }
+    
+} */
+
+
+/* Seção 'Sobre Nós' responsiva */
+
+/* Estilos padrão para dispositivos menores que 576px (celulares pequenos) */
+/* @media (max-width: 575.98px) { */
+/* .sobre-nos {
+        padding: 20px; 
+        text-align: center; 
+    }
+    .sobre-nos img {
+        width: 100%; 
+        height: auto; 
+    }  
+    .sobre-nos .texto {
+        font-size: 17px; 
+    }
+} */
+
+
+/* Estilos para telas maiores ou iguais a 576px (celulares grandes e tablets pequenos) */
+/* @media (min-width: 576px) {
+    .sobre-nos {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        padding: 30px; 
+    }
+    .sobre-nos img {
+        max-width: 80%; 
+    }
+    .sobre-nos .texto {
+        font-size: 16px; 
+        text-align: justify; 
+    }
+} */
+
+/* Estilos para telas maiores ou iguais a 992px (tablets grandes e desktops pequenos) */
+/* @media (min-width: 992px) {
+    .sobre-nos {
+        flex-direction: row; 
+        justify-content: space-between; 
+        padding: 40px; 
+    }
+    .sobre-nos img {
+        max-width: 50%; 
+    }
+    .sobre-nos .texto {
+        font-size: 18px; 
+    }
+} */
+
+/* Estilos para telas maiores ou iguais a 1200px (desktops padrão) */
+/* @media (min-width: 1200px) {
+    .sobre-nos {
+        padding: 50px; 
+        max-width: 1200px; /
+        margin: 0 auto; 
+    }
+    .sobre-nos img {
+        max-width: 45%; 
+    }
+    .sobre-nos .texto {
+        font-size: 20px; 
+    }
+} */
+
+/* Estilos para telas maiores ou iguais a 1400px (desktops grandes e telas maiores) */
+/* @media (min-width: 1400px) {
+    .sobre-nos {
+        max-width: 1400px; /
+    }
+    .sobre-nos img {
+        max-width: 40%; 
+    }
+    .sobre-nos .texto {
+        font-size: 22px; 
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================
+   ESTILOS GERAIS DA SEÇÃO "SOBRE NÓS"
+   ========================== */
+/* .sobre-nos {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+} */
+
+/* .sobre-nos h1 {
+    font-size: 2rem;
+    color: var(--color-Azul-4);
+    margin-bottom: 20px;
+} */
+
+/* .sobre-nos p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    line-height: 1.6;
+    color: var(--color-CinzaEscuro-3);
+} */
+
+/* .sobre-nos img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+} */
+
+/* ==========================
+   RESPONSIVIDADE
+   ========================== */
+
+/* Telas menores que 576px (celulares pequenos) */
+/* @media (max-width: 575px) {
+    .sobre-nos h1 {
+        font-size: 1.5rem;
+    }
+    .sobre-nos p {
+        font-size: 1rem;
+    }
+    .sobre-nos img {
+        max-width: 90%;
+    }
+} */
+
+/* Telas a partir de 576px (celulares grandes e tablets pequenos) */
+/* @media (min-width: 576px) {
+    .sobre-nos h1 {
+        font-size: 1.75rem;
+    }
+    .sobre-nos p {
+        font-size: 1.1rem;
+    }
+} */
+
+/* Telas a partir de 992px (tablets grandes e desktops pequenos) */
+/* @media (min-width: 992px) {
+    .sobre-nos {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+    .sobre-nos h1 {
+        font-size: 2.2rem;
+    }
+    .sobre-nos p {
+        font-size: 1.2rem;
+        max-width: 600px;
+    }
+    .sobre-nos img {
+        max-width: 500px;
+    }
+} */
+
+/* Telas a partir de 1200px (desktops padrão) */
+/* @media (min-width: 1200px) {
+    .sobre-nos h1 {
+        font-size: 2.5rem;
+    }
+    .sobre-nos p {
+        font-size: 1.3rem;
+    }
+} */
+
+/* Telas a partir de 1400px (desktops grandes e telas maiores) */
+/* @media (min-width: 1400px) {
+    .sobre-nos {
+        max-width: 1600px;
+    }
+    .sobre-nos h1 {
+        font-size: 2.8rem;
+    }
+    .sobre-nos p {
+        font-size: 1.4rem;
+    }*/
+
+
+/*Modal Sobre Nois */
+
+.modal-sobre-nois-avaliado-ative{
+    display: flex;
+    animation: suave 1s ease;
+    width: 100%;
+    justify-content: center;
+    /* background-color: #1a1a1a;    */
+    align-items: center; 
+    height: 200px;
+    position: absolute;
+    top: 0;
+    animation: suave 1s ease;
+    /* box-shadow: 0, 3px 5px rgba(0, 0, 0, 0.1); */
+    z-index: 10;
+    margin-bottom: 10px;  
+
+}
+.modal-sobre-nois-avaliado{
+    display: none;
+}
+.conteudo-modal{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    gap: 1rem;
+    border-radius:5px;
+}
+.conteudo-modal i{
+    font-size: 80px;
+    color: #FA301E;
+}
+.conteudo-modal p{
+    font-size: 20px;
+}
+
+/*Segundo Modal*/
+.modal-sobre-nois-not-avaliado-ative{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* background-color: #1a1a1a;    */
+    align-items: center; 
+    height: 200px;
+    position: absolute;
+    top: 0;
+    animation: suave 1s ease;
+    box-shadow: 0, 3px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    margin-bottom: 10px;
+}
+@keyframes suave{
+    from{
+        transform: translateY(50%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.modal-sobre-nois-not-avaliado{
+    display: none;
+}
+
+.conteudo-modal-not{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-color: #fff;
+    box-shadow: -1px -6px 20px 12px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    gap: 1rem;
+    border-radius: 20px;
+}   
+.conteudo-modal-not p{
+    font-size: 20px;
+}
+
+
+
+.modal-sobre-nois-sem-estrela-ative{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* background-color: #1a1a1a;    */
+    align-items: center; 
+    height: 200px;
+    position: absolute;
+    top: 0;
+    animation: suave 1s ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 10;
+    margin-bottom: 10px;
+}
+@keyframes suave{
+    from{
+        transform: translateY(50%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.modal-sobre-nois-sem-estrela{
+    display: none;
+}
+
+.conteudo-modal-sem-estrela{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-color:white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    gap: 1rem;
+    border-radius: 5px;
+}   
+.conteudo-modal-sem-estrela p{
+    font-size: 20px;
+}

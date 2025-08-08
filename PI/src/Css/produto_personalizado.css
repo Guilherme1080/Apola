@@ -1,0 +1,456 @@
+.container_produto_personazalizado{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container_items_produto_personalizado{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
+.card_produto_personalizado{
+    display: flex;
+    width: 300px;
+    background-color: rgb(247, 247, 247);
+    height: 40%;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    transition: all 0.2s ease;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+
+.card_produto_personalizado i{
+    display: flex;
+    color: #4200db;
+    font-size:35px;
+}
+
+.name_card_item_personalizado{
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    color: #4A4A4A;
+
+}
+
+.card_produto_personalizado:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+
+
+
+
+
+
+
+.container_form_produto_personalizado{
+    display: flex;
+    /* background-color: orange; */
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 3rem;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+
+}
+
+.container_personalizado{
+    display: flex;
+    width: 90%;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 2rem;
+ 
+}
+
+.title-quadro_personalizado{
+    display: flex;
+    color: #4A4A4A;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.descricao-quadro{
+    font-size: 13px;
+    color: #9b9b9b;
+    font-weight: 400;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.insert-text{
+    display: flex;
+    width: 100%;
+    height: 230px;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2 ;
+    outline: none;
+    padding: 1rem;
+    color: #4A4A4A;
+    font-size: 13px;
+    resize: none;
+
+
+}
+
+
+
+.box-insert-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-insert-image h1{
+    display: flex;
+    color: #4A4A4A;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+.insert-image {
+    padding: 10px;
+    border: 1px dashed #FA301E;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.insert-image:hover {
+    background-color: #FA301E;
+    color: black;
+    font-weight: bolder;
+}
+
+
+.image-preview {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    object-fit: cover;
+    gap: 1rem;
+}
+.image-preview img{
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+.custom-file-upload {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    /* background-color: #c2c2c2; */
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    
+}
+
+.custom-file-upload input[type="file"] {
+    display: flex;
+    /* background-color: #4200db; */
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.custom-file-upload label {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 24px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    font-weight: 500;
+    z-index: -1;
+}
+
+.custom-file-upload label:hover {
+    background-color: #FA301E;
+    border-color:#878787;
+}
+
+.custom-file-upload input[type="file"]:focus + label,
+.custom-file-upload input[type="file"]:active + label {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 114, 68, 0.847);
+}
+
+/* Estilo para as imagens (opcional) */
+.custom-file-upload input[type="file"]:valid + label {
+    background-color: #FA301E;
+}
+
+.custom-file-upload label:active {
+    transform: scale(0.98); /* Efeito de pressionamento */
+}
+
+.image-container {
+    top: 5px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+}
+.image-container img{
+    width: 90px;
+    height: 90px;
+}
+
+.preview-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 0px;
+    transition: transform 1.0s ease, opacity 0.3s ease;
+}
+
+
+.image-preview .remove-button {
+    margin: 10px;
+    top: -25px;
+    right:150px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1.0s;
+    background-color: red;
+}
+.remove-button:hover{
+    transform: scale(1.0);
+    background-color: #4A4A4A;
+    color: white;
+}
+
+
+.alert {
+    color: #FA301E;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.local_images{
+    flex-direction: row;
+    gap: -2px;
+}
+
+
+.alert {
+    color: #FA301E;
+    margin-top: 20px;
+}
+
+
+
+.box-button{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    justify-content:end;
+    padding-right: 5rem;
+    margin: 1rem;
+}
+
+.box-button .btn-finalizar{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #4200db;
+    color: white;
+    font-weight:500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.box-button .btn-finalizar:hover{
+    background-color: #4A4A4A;
+    transform: scale(1.05);
+}
+
+
+.modal-enviado{
+    display: none;
+}
+.modal-enviado-active{
+    bottom:15rem;
+    display: flex;
+    position: fixed;
+    z-index: 5;
+    flex-direction: column;
+    width: 50%;
+    background-color: white;
+    height: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px;
+    border-radius: 10px;
+    animation: aparecer ease 2s;
+}
+@keyframes aparecer{
+    from{
+        transform: translateY(50%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.area-btn-fechar{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.btn-fechar-modal{
+    color: red;
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-fechar-modal:focus{
+    outline: none;
+}
+.corpo-modal-enviado{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+
+
+@media (max-width: 1110px) {
+    .container_form_produto_personalizado{
+        display: flex;
+        flex-direction: column;
+    }
+    .container_items_produto_personalizado{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 70vh;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+
+    .card_produto_personalizado{
+        display: flex;
+        width: 300px;
+        background-color: rgb(247, 247, 247);
+        height: 40%;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        transition: all 0.2s ease;
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    }
+    
+    
+}
+@media (max-width: 625px) {
+    .container_items_produto_personalizado{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 95vh;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding-bottom: 2rem;
+    }
+
+    .container_personalizado{
+        height: auto;
+    }
+
+    .card_produto_personalizado{
+        display: flex;
+        width: 300px;
+        background-color: rgb(247, 247, 247);
+        height: 18%;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        transition: all 0.2s ease;
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    }
+    
+    .image-preview{
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .image-container img{
+        width: 150px;
+        height: 100px;
+    }
+    
+}
+
+@media(max-width: 500px){
+    .custom-file-upload {
+        width: 140px;
+    }
+}

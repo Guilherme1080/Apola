@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal 5</title>
+  <link rel="stylesheet" href="../src/Css/style.css">
+  <script src="../src/JS/modal.js" defer></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <button class="open-modal" data-modal="modal-1">
+
+  </button>
+  <!-- MODAL QUE APÓS CLICAR EM RATREIA SUA ECOMENDA REDIRECIONA PARA O SITE DOS CORREIOS-->
+
+  <dialog id="modal-1">
+    <div class="modal_header">
+      <button class="close-modal" data-modal="modal-1"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="modal_body">
+      <h5 class="title_modal_zap">Avaliação</h5>
+      <div class="text_modal_zap">Gostou do produto? Sua opinião é essencial para que possamos continuar oferecendo a melhor experiência para nossos clientes. </div>
+      <div class="conatiner_item_modal_link_zap">
+        <form action="">
+            <div class="item_star_modal">
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <input type="text">
+                <div class="container_avalirar_btn">
+                    <button class="avaliar_btn">Comentar</button>
+                </div>
+            </div>
+
+        </form>
+      </div>  
+    </div>
+  </dialog>
+
+  
+</body>
+</html>

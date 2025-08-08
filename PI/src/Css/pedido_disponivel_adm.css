@@ -1,0 +1,211 @@
+.conatiner_cadastro_adm_pedido_header{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 2rem;
+}
+
+.item_flex_pedido{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.item_flex_pedido label{
+    display: flex;
+    color: #4A4A4A;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+
+.item_flex_pedido input{
+    width: 330px;
+    height: 39px;
+    border-radius: 5px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    padding: 10px;
+    color: #707070;
+    display: flex;
+}
+
+#input_2_pedido{
+    width: 200px;
+}
+#input_3_pedido{
+    width: 100px;
+}
+
+.item_flex_pedido select{
+    width: 200px;
+    height: 39px;
+    display: flex;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    padding: 10px;
+    color: #707070;
+    font-size: 14px;
+}
+
+
+.shape_pedido{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: #ebebeb;
+    margin-top: 3rem;
+    border-radius: 5px;
+}
+
+
+.conatiner_cadastro_adm_pedido_body{
+    display: flex;
+    width: 100%;
+    margin-top: 3rem;
+    gap: 2rem;
+
+}
+
+.conatiner_cadastro_adm_pedido_body_left{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+
+}
+
+
+.conatiner_cadastro_adm_pedido_body_right{
+    display: flex;
+    width: 50%;
+
+}
+
+
+
+
+.conatiner_img_pedido_adm{
+    display: flex;
+    width: 600px;
+    height: 300px;
+    border: 1px solid #c9c9c9;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1475px) {
+    .conatiner_img_pedido_adm{
+        width: 500px;
+        
+    }
+
+    .item_flex_pedido input{
+        width: 280px;
+    }
+
+    
+}
+
+
+@media (max-width:1260px) {
+    .conatiner_img_pedido_adm{
+        width: 400px;
+        
+    }
+
+    
+}
+@media (max-width:1064px) {
+    .conatiner_img_pedido_adm{
+        width: 300px;
+        
+    }
+
+    
+}
+@media (max-width:861px) {
+    .conatiner_cadastro_adm_pedido_body_left{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    
+    
+    }
+    
+    
+    .conatiner_cadastro_adm_pedido_body_right{
+        display: flex;
+        width: 100%;
+        margin-top: 2rem;
+        justify-content: center;
+    
+    }
+
+    .conatiner_img_pedido_adm{
+        width: 600px;
+        height: 200px;
+    }
+    
+
+    
+}
+
+
+@media (max-width:853px){
+    .conatiner_img_pedido_adm{
+        width: 550px;
+    }
+    
+
+}
+
+@media (max-width:798px){
+    .conatiner_img_pedido_adm{
+        width: 500px;
+    }
+    
+
+}
+
+@media (max-width:565px){
+    .conatiner_img_pedido_adm{
+        width: 400px;
+    }
+    
+
+}
+@media (max-width:461px){
+    .conatiner_img_pedido_adm{
+        width: 300px;
+        height: 250px;
+    }
+    
+
+}
+@media (max-width:369px){
+    .conatiner_img_pedido_adm{
+        width:250px;
+        height: 200px;
+    }
+    
+
+}

@@ -1,0 +1,116 @@
+@import url(cadastro.css);
+@import url(footer.css);
+@import url(home.css);
+@import url(login.css);
+@import url(navbar.css);
+/* @import url(syte.css); */
+@import url(sobre_nos.css);
+@import url(favoritos.css);
+@import url(perfil.css);
+@import url(categorias.css);
+@import url(produto_personalizado.css);
+@import url(comprar_produto.css);
+@import url(carrinho.css);
+@import url(historico_pedido.css);
+@import url(resultados-busca.css);
+
+
+@import url(modal.css);
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+:root{
+  --color-Branco-1: #ffffff;
+  --color-Laranja-2: #FA301E;
+  --color-CinzaEscuro-3: #4A4A4A;
+  --color-Azul-4: #4200db;
+  --color-CinzaClaro-5: #E2E2E2;
+  --background-ADM-6:#fafbff;
+}
+
+
+*:not(dialog) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins","Montserrat";
+  text-decoration: none;
+}
+
+*{
+  font-family: "Poppins","Montserrat";
+}
+
+
+
+main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+
+body{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.body2{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+
+}
+
+
+.main3{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+} 
+
+
+.main2{
+  display: flex;
+  width: 100%;
+  height:100%;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  overflow: hidden;
+  margin-top: 100px;
+
+} 
+.input-erro {
+  border-bottom: 1px solid red !important;
+}
+
+.erro-input {
+  font-size: 12px;
+  color: red;
+  margin-left: 4px;
+}
+
+
+
+
+
+@media (max-width:446px) {
+  .main2{
+    margin-top: 0;
+  }
+  
+}
