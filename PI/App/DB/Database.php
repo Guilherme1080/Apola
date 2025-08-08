@@ -11,7 +11,7 @@ class Database{
     public string $local="localhost";
     public string $db="140p1";
     public string $user = "root";
-    public string $password = "Suporte@22";
+    public string $password = "";
     public $table;
 
     // public $conection;
